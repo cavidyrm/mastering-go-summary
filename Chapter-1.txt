@@ -1,2 +1,19 @@
-go build fileName.go
+Go does not care about the name of the source file of an autonomous program
+as long as the package name is main and there is a single main() function in it, because the
+main() function is where the program execution begins. As a result, you cannot have
+multiple main() functions in the files of a single project.
+
+$ go build aSourceFile.go
+
+After this command run, you will have a new executable file named aSourceFile
+The main reason that aSourceFile is that big is because it is statically linked, which means
+that it does not require any external libraries in order to run.
+
+$ go run aSourceFile.go
+
+With go run, the Go compiler still needs to create an executable file. The
+fact that you will not see it, that it is automatically executed, and that it is
+automatically deleted after the program has finished might make you
+think that there is no need for an executable file!
+
 
