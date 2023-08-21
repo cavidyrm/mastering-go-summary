@@ -16,4 +16,22 @@ fact that you will not see it, that it is automatically executed, and that it is
 automatically deleted after the program has finished might make you
 think that there is no need for an executable file!
 
+Declaring a new variable
+// about := and =
+Declare a variable possible in two ways in Go
+The first method is explicitly declare a name and type for the new variable:
+
+var a int
+a = 2
+
+The first part is a keyword for declaring a var, second one is a name for variable that you can put there what you want,
+for more information to know how you can choose a name for variables or unctions you can search for golang convention,
+the third one is the type of variables that you can see the other data types that available in golang on the https://go.dev
+
+the second vay to declare a variable is :=
+
+a := 2
+
+In this way you can declare a new variable with implicitly type declaration,
+but note that this way is available inside a function, you can't use this outside of function(main or any)
 
