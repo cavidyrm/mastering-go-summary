@@ -21,17 +21,24 @@ Declaring a new variable
 Declare a variable possible in two ways in Go
 The first method is explicitly declare a name and type for the new variable:
 
-var a int
+var a int32
 a = 2
+var a, b, c string
 
 The first part is a keyword for declaring a var, second one is a name for variable that you can put there what you want,
 for more information to know how you can choose a name for variables or unctions you can search for golang convention,
 the third one is the type of variables that you can see the other data types that available in golang on the https://go.dev
 
-the second vay to declare a variable is :=
+the second vay to declare a variable is using :=
 
 a := 2
+b, c := 3, 4
 
 In this way you can declare a new variable with implicitly type declaration,
 but note that this way is available inside a function, you can't use this outside of function(main or any)
+
+a, d := 5, 6
+
+As the d variable is used for the first time in the second statement, you should use := even
+though a has already been defined in the first statement.
 

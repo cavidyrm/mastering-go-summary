@@ -1,0 +1,5 @@
+Constants are usually global variables. Thus, you
+might rethink your approach if you find yourself defining too many
+constant variables with a local scope!
+
+
